@@ -118,3 +118,4 @@ D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.csproj
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.pdb
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.genruntimeconfig.cache
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

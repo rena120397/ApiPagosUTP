@@ -1,8 +1,10 @@
-﻿using Dominio;
+﻿using Aplicacion.ManejadorError;
+using Dominio;
 using MediatR;
 using Persistencia;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,6 +30,13 @@ namespace Aplicacion.Categorias
             public async Task<Categoria> Handle(CategoriaUnica request, CancellationToken cancellationToken)
             {
                 var categoria = await _context.Categoria.FindAsync(request.Id_categoria);
+
+                if (categoria == null)
+                {
+                    //throw new Exception("No se pudo eliminar la categoria");
+                    throw new ManejadorExcepcion(HttpStatusCode.NotFound, new { mensaje = "No se encontró la categoria" });
+                }
+
                 return categoria;
             }
         }

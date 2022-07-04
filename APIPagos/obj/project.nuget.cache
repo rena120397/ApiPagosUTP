@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xrA1y2lACEc5wfmn0b+N8LJxvCPHOzwS/0rFXhSx5H3fzXY5Cahp0Sn2/lMl4Dk40xQr6t7WfIiAJYd+pWUNxQ==",
+  "dgSpecHash": "Xx+80UZ9CdFeBFk0Gn7/ompLKKXcTbTfOL9xsB+Iv40DRXGtD02eqUlJ1D0HqQwganUN2pXe0b2P0zqBjK06ZQ==",
   "success": true,
   "projectFilePath": "D:\\GIT PROYECTO_UTP\\ApiPagosUTP\\APIPagos\\APIPagos.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\rena_\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\rena_\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\rena_\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\rena_\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\rena_\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\rena_\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\rena_\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

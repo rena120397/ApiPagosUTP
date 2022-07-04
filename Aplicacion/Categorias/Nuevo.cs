@@ -1,8 +1,11 @@
-﻿using Dominio;
+﻿using Aplicacion.ManejadorError;
+using Dominio;
+using FluentValidation;
 using MediatR;
 using Persistencia;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,7 +16,15 @@ namespace Aplicacion.Categorias
     {
         public class Ejecuta : IRequest
         {
-            public string Nombre { get; set; }
+            public string nombre_categoria { get; set; }
+        }
+
+        public class EjecutaValidacion : AbstractValidator<Ejecuta>
+        {
+            public EjecutaValidacion()
+            {
+                RuleFor( x=>x.nombre_categoria).NotEmpty();
+            }
         }
 
         public class Manejador : IRequestHandler<Ejecuta>
@@ -29,7 +40,7 @@ namespace Aplicacion.Categorias
             {
                 var categoria = new Categoria
                 {
-                    nombre_categoria = request.Nombre
+                    nombre_categoria = request.nombre_categoria
                 };
 
                 _context.Categoria.Add(categoria);
@@ -40,7 +51,7 @@ namespace Aplicacion.Categorias
                     return Unit.Value;
                 }
 
-                throw new Exception("No se pudo insertar la categoria");
+                throw new ManejadorExcepcion(HttpStatusCode.NotModified, new { mensaje = "No se insertó la categoria" });
             }
         }
     }
