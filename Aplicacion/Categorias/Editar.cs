@@ -1,4 +1,5 @@
 ﻿using Aplicacion.ManejadorError;
+using FluentValidation;
 using MediatR;
 using Persistencia;
 using System;
@@ -17,6 +18,15 @@ namespace Aplicacion.Categorias
             public int Id_categoria { get; set; }
 
             public string nombre_categoria { get; set; }
+        }
+
+        public class EjecutaValidacion : AbstractValidator<Ejecuta>
+        {
+            public EjecutaValidacion()
+            {
+                RuleFor(x => x.Id_categoria).NotEmpty();
+                RuleFor(x => x.nombre_categoria).NotEmpty();
+            }
         }
 
         public class Manejador : IRequestHandler<Ejecuta>

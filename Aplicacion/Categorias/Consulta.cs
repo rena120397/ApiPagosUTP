@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using Persistencia;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation;
 
 namespace Aplicacion.Categorias
 {
