@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <Folder Include="Documentos\" />
-    <Folder Include="Pagos\" />
   </ItemGroup>
 
 </Project>
