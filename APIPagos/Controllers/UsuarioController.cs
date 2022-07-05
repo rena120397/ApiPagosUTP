@@ -24,5 +24,11 @@ namespace APIPagos.Controllers
             return await mediator.Send(parametros);
         }
 
+        [HttpGet]
+        public async Task<ActionResult<UsuarioData>> DevolverUsuario()
+        {
+            return await mediator.Send(new UsuarioActual.Ejecutar());
+        }
+
     }
 }

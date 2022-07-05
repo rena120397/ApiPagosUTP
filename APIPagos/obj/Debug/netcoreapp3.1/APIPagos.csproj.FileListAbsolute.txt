@@ -69,6 +69,7 @@ D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\FluentValidatio
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\MediatR.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -94,8 +95,14 @@ D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.Exten
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
@@ -109,7 +116,9 @@ D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\runtimes\win\li
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Aplicacion.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Dominio.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Persistencia.dll
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Seguridad.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Aplicacion.pdb
+D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Seguridad.pdb
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Dominio.pdb
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Persistencia.pdb
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.csproj.AssemblyReference.cache
@@ -125,12 +134,3 @@ D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.csproj
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.dll
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.pdb
 D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\obj\Debug\netcoreapp3.1\APIPagos.genruntimeconfig.cache
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Seguridad.dll
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Seguridad.pdb
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-D:\GIT PROYECTO_UTP\ApiPagosUTP\APIPagos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
