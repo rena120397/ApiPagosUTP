@@ -11,15 +11,8 @@ namespace APIPagos.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DocumentosController : ControllerBase
+    public class DocumentosController : MyControllerBase
     {
-        private readonly IMediator mediator;
-
-        public DocumentosController(IMediator _mediator)
-        {
-            this.mediator = _mediator;
-        }
-
         //http://localhost:47113/api/Categorias
         [HttpGet]
         public async Task<ActionResult<List<Documento>>> Get()

@@ -1,6 +1,7 @@
 ﻿using Aplicacion.Categorias;
 using Dominio;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -10,15 +11,8 @@ namespace APIPagos.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriasController : ControllerBase
+    public class CategoriasController : MyControllerBase
     {
-        private readonly IMediator mediator;
-
-        public CategoriasController(IMediator _mediator)
-        {
-            this.mediator = _mediator;
-        }
-
         //http://localhost:47113/api/Categorias
         [HttpGet]
         public async Task<ActionResult<List<Categoria>>> Get()
