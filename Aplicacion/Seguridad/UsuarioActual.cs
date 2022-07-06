@@ -25,7 +25,7 @@ namespace Aplicacion.Seguridad
             }
             public async Task<UsuarioData> Handle(Ejecutar request, CancellationToken cancellationToken)
             {
-                var usuario = await _userManager.FindByNameAsync(_usuarioSesion.ObtenerUsuarioSesion());
+                var usuario = await _userManager.FindByIdAsync(_usuarioSesion.ObtenerUsuarioSesion());
                 return new UsuarioData
                 {
                     NombreCompleto = usuario.NombreCompleto,

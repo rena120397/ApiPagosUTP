@@ -61,7 +61,7 @@ namespace Aplicacion.Seguridad
                     throw new ManejadorExcepcion(HttpStatusCode.BadRequest, new { mensaje = "Existe ya un usuario registrado con este email" });
                 }
 
-                var existeUsername = await _context.Users.Where(x => x.UserName == request.Username).AnyAsync(); ;
+                var existeUsername = await _context.Users.Where(x => x.UserName == request.Username).AnyAsync();
                 if (existeUsername)
                 {
                     throw new ManejadorExcepcion(HttpStatusCode.BadRequest, new { mensaje = "Existe ya un usuario registrado con este username" });

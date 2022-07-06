@@ -15,7 +15,10 @@ namespace Seguridad.TokenSeguridad
         {
             var claims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.NameId, usuario.UserName)
+                new Claim(JwtRegisteredClaimNames.NameId, usuario.Id),
+                new Claim(JwtRegisteredClaimNames.Email, usuario.Email),
+                new Claim(JwtRegisteredClaimNames.GivenName, usuario.NombreCompleto),
+                new Claim(JwtRegisteredClaimNames.UniqueName, usuario.UserName)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra secreta"));

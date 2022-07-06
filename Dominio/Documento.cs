@@ -9,7 +9,7 @@ namespace Dominio
     {
         [Key]
         public int? id_documento { get; set; }  
-        public int? id_usuario { get; set; }
+        public Guid id_usuario { get; set; }
         public string nombre_documento { get; set; }
         public string documento { get; set; }
         public string fechacreacion { get; set; }

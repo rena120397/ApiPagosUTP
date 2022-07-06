@@ -1,4 +1,5 @@
-﻿using Aplicacion.ManejadorError;
+﻿using Aplicacion.Contratos;
+using Aplicacion.ManejadorError;
 using Dominio;
 using FluentValidation;
 using MediatR;
@@ -16,7 +17,7 @@ namespace Aplicacion.Documentos
     {
         public class Ejecuta : IRequest
         {
-            public int id_usuario { get; set; }
+            //public Guid id_usuario { get; set; }
             public string nombre_documento { get; set; }
             public string documento { get; set; }
             public string fechacreacion { get; set; }
@@ -26,7 +27,7 @@ namespace Aplicacion.Documentos
         {
             public EjecutaValidacion()
             {
-                RuleFor(x => x.id_usuario).NotEmpty();
+                //RuleFor(x => x.id_usuario).NotEmpty();
                 RuleFor(x => x.nombre_documento).NotEmpty();
                 RuleFor(x => x.documento).NotEmpty();
                 RuleFor(x => x.fechacreacion).NotEmpty();
@@ -36,17 +37,26 @@ namespace Aplicacion.Documentos
         public class Manejador : IRequestHandler<Ejecuta>
         {
             private readonly PagosOnlineContext _context;
+            private readonly IUsuarioSesion _usuarioSesion;
 
-            public Manejador(PagosOnlineContext context)
+            public Manejador(IUsuarioSesion usuarioSesion,PagosOnlineContext context)
             {
                 _context = context;
+                _usuarioSesion = usuarioSesion;
             }
 
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
+                var idUsuario = _usuarioSesion.ObtenerUsuarioSesion();
+
+                if (idUsuario == null)
+                {
+                    throw new ManejadorExcepcion(HttpStatusCode.NotFound, new { mensaje = "No se encontró el usuario" });
+                }
+
                 var documento = new Documento
                 {
-                    id_usuario = request.id_usuario,
+                    id_usuario = new Guid(idUsuario),
                     nombre_documento = request.nombre_documento,
                     documento = request.documento,
                     fechacreacion = request.fechacreacion

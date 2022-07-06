@@ -9,7 +9,7 @@ namespace Dominio
     {
         [Key]
         public int? Id_pago {get;set;}
-        public int? Id_usuario { get;set;}
+        public Guid Id_usuario { get;set;}
         public int? id_categoria { get;set;}
         public string nombre_pago { get;set;}
         public string fechaingreso { get;set;}
