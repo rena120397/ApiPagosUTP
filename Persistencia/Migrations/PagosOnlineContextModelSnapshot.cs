@@ -47,8 +47,8 @@ namespace Persistencia.Migrations
                     b.Property<string>("fechacreacion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("id_usuario")
-                        .HasColumnType("int");
+                    b.Property<Guid>("id_usuario")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("nombre_documento")
                         .HasColumnType("nvarchar(max)");
@@ -65,8 +65,8 @@ namespace Persistencia.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("Id_usuario")
-                        .HasColumnType("int");
+                    b.Property<Guid>("Id_usuario")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int?>("alerta")
                         .HasColumnType("int");

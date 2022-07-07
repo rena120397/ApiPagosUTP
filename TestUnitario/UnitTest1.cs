@@ -36,19 +36,19 @@ namespace TestUnitario
         }
 
         //prueba unitaria para validar acción de consulta
-        //[TestMethod]
-        //public async TaskAplicacionConsulta_Test()
-        //{
-        //    var moq = new Mock<IMediator>();
-        //    //Act
-        //    var controller = new CategoriasController(moq.Object);
+        /*[TestMethod]
+        public async Task AplicacionConsulta_Test()
+        {
+            var moq = new Mock<IMediator>();
+            //Act
+            var controller = new CategoriasController();
 
-        //    //Arrange
-        //    var rpta = await controller.Get();
+            //Arrange
+            var rpta = await controller.Get();
 
-        //    //something like:
-        //    Assert.IsNotNull(rpta);
-        //}
+            //something like:
+            Assert.IsNotNull(rpta);
+        }*/
 
         //prueba unitaria para validacion fluent
         /*[TestMethod]

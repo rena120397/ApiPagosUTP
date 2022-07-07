@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace APIPagos.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class PagosController : MyControllerBase
     {
         //http://localhost:47113/api/Categorias
         [HttpGet]
-        public async Task<ActionResult<List<Pago>>> Get()
+        public async Task<ActionResult<List<Pago>>> Listar()
         {
             return await mediator.Send(new Consulta.ListaPago());
         }
@@ -34,6 +34,13 @@ namespace APIPagos.Controllers
 
         [HttpPut("{id}")]
         public async Task<ActionResult<Unit>> Editar(int id, Editar.Ejecuta data)
+        {
+            data.Id_pago = id;
+            return await mediator.Send(data);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Unit>> CambiarAlerta(int id, CambiarAlerta.Ejecuta data)
         {
             data.Id_pago = id;
             return await mediator.Send(data);

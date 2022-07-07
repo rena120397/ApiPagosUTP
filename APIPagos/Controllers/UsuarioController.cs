@@ -29,6 +29,5 @@ namespace APIPagos.Controllers
         {
             return await mediator.Send(new UsuarioActual.Ejecutar());
         }
-
     }
 }

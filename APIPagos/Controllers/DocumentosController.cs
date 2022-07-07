@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace APIPagos.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class DocumentosController : MyControllerBase
     {
         //http://localhost:47113/api/Categorias
         [HttpGet]
-        public async Task<ActionResult<List<Documento>>> Get()
+        public async Task<ActionResult<List<Documento>>> Listar()
         {
             return await mediator.Send(new Consulta.ListaDocumento());
         }
